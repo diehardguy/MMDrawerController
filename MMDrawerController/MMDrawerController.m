@@ -297,7 +297,7 @@ static NSString *MMDrawerOpenSideKey = @"MMDrawerOpenSide";
          delay:0.0
          options:options
          animations:^{
-             [self setNeedsStatusBarAppearanceUpdateIfSupported];
+             //[self setNeedsStatusBarAppearanceUpdateIfSupported];
              [self.centerContainerView setFrame:newFrame];
              [self updateDrawerVisualStateForDrawerSide:visibleSide percentVisible:0.0];
          }
@@ -356,7 +356,7 @@ static NSString *MMDrawerOpenSideKey = @"MMDrawerOpenSide";
              delay:0.0
              options:options
              animations:^{
-                 [self setNeedsStatusBarAppearanceUpdateIfSupported];
+                 //[self setNeedsStatusBarAppearanceUpdateIfSupported];
                  [self.centerContainerView setFrame:newFrame];
                  [self updateDrawerVisualStateForDrawerSide:drawerSide percentVisible:1.0];
              }
@@ -792,7 +792,7 @@ static NSString *MMDrawerOpenSideKey = @"MMDrawerOpenSide";
             [self.leftDrawerViewController.view setHidden:YES];
             [self.rightDrawerViewController.view setHidden:YES];
         }
-        [self setNeedsStatusBarAppearanceUpdateIfSupported];
+        //[self setNeedsStatusBarAppearanceUpdateIfSupported];
     }
 }
 
